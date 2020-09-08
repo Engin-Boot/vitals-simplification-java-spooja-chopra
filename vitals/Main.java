@@ -2,14 +2,11 @@ package vitals;
 
 public class Main {
     static boolean vitalsAreOk(float bpm, float spo2, float respRate) {
-        if(bpm < 70 || bpm > 150) {
-            return false;
-        } else if(spo2 < 90) {
-            return false;
-        } else if(respRate < 30 || respRate > 95) {
-            return false;
-        }
+      if((bpm>=70 && pbm<=150)||(spo2>=90)||(resRate>=30 &&resRate<=95))
+      {
         return true;
+      }
+        return false;
     }
 
     public static void main(String[] args) {
